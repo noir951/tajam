@@ -45,3 +45,13 @@ $(window).scroll(function() {
       .end().filter("[href='#" + id + "']").parent().addClass("active");
   }
 });
+
+// Slick slider
+$('.header-main__slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: 'header-main__slider-togs',
+});
